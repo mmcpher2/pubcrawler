@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "angular": "^1.7.1",
+    "materialize-css": "^0.100.2"
+  }
+}
