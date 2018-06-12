@@ -1,18 +1,18 @@
 
 
-angular.module("RyanSays").config(function ($routeProvider) {
+angular.module("PubCrawler").config(function ($routeProvider) {
     /**
      * Configure all Angular application routes here
      */
     $routeProvider.
         when ('/', {
-            templateUrl: "app/auth/partials/auth.html",
-            controller: "AuthCtrl"
+            templateUrl: "app/main/partials/main.html",
+            controller: "MainCtrl"
         })
-        .when('/game', {
-            templateUrl: "app/game/partials/game.html",
-            controller: "GameCtrl",
-            resolve: { isAuth }
-        })
+        // .when('/game', {
+        //     templateUrl: "app/game/partials/game.html",
+        //     controller: "GameCtrl",
+        //     resolve: { isAuth }
+        // })
         .otherwise('/')
 })
